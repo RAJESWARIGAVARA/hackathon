@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Details!!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('5thpgbg.jpeg'); /* Replace with your actual image path or URL */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    form {
+      background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    #displayQuestions {
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Your Details!!</h1>
+
+  <form>
+    <label for="foodQuantity">Enter quantity:</label>
+    <input type="text" id="foodQuantity" name="foodQuantity" placeholder="e.g., 5 kg" >
+
+    <br>
+
+    <label for="foodName">Enter food item:</label>
+    <input type="text" id="foodName" name="foodName" placeholder="e.g., Rice" >
+
+    <br>
+
+    <label for="userLocation">Enter your location:</label>
+    <input type="text" id="userLocation" name="userLocation" placeholder="e.g., City, Country" >
+
+    <br>
+
+    <label for="mobileNumber">Enter mobile number:</label>
+    <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="e.g., 123-456-7890" >
+    
+    <br>
+
+    <button type="button" onclick="navigateToNextPage()">PROCEED</button>
+  </form>
+  <script>
+    function navigateToNextPage() {
+  window.location.href = "8thpg.html"; 
+  }
+  </script>
+
+  </head>
+  </body>

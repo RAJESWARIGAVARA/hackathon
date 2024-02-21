@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered title</title>
+    <style>
+        body {
+      margin: 0;
+      padding: 0;
+      background-image: url('5thpgbg.jpeg'); /* Replace with your actual image path or URL */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+      </style>
+      </head>
+      <body>
+        <h1>You are Assigned a task!!!</h1>
+        <h2>Are You Ready To Deliver?</h2>
+      </body>
+      </html>
+
+</head>
+<body>
+    <style>
+
+    </style>
+
+    <form id="myForm">
+        <label>
+            <input type="radio" name="answer" value="yes" onclick="navigateNext()"> Yes
+        </label>
+        <label>
+            <input type="radio" name="answer" value="no"> No
+        </label>
+    </form>
+
+    <script>
+        function navigateNext() {
+            // Get the form element
+            var form = document.getElementById("myForm");
+
+            // Check if the "Yes" radio button is selected
+            if (form.elements["answer"].value === "yes") {
+                // Redirect to the next page (replace 'nextPage.html' with y actual next page)
+                window.location.href = "10thpg.html";
+            }
+        }
+    </script>
+
+</body>
+</html>
